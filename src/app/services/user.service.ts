@@ -3,10 +3,8 @@ import { Observable, of } from 'rxjs';
 
 import { User } from '../models/User';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class DataService {
+@Injectable()
+export class UserService {
 
   users: User[];
   data: Observable<any>;
